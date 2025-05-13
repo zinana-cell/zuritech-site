@@ -3,41 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <title>Zuritech Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f6f9;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
       color: #333;
+    }
+    header {
+      background: #1a73e8;
+      color: white;
+      padding: 40px 20px;
       text-align: center;
-      padding-top: 100px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
     }
     .container {
-      max-width: 600px;
-      margin: auto;
-      background-color: #ffffff;
-      padding: 30px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      margin: 50px auto;
+      background: #ffffff;
+      padding: 40px;
       border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
-    h1 {
+    .container h2 {
       color: #1a73e8;
+      margin-bottom: 20px;
     }
-    p {
+    .container p {
       font-size: 18px;
       line-height: 1.6;
     }
-    .email {
-      margin-top: 20px;
-      font-weight: bold;
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #888;
+    }
+    @media(max-width: 600px) {
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+      header h1 {
+        font-size: 28px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
+
+  <header>
     <h1>Zuritech Solutions</h1>
-    <p>Professional online payment solutions for businesses in Switzerland.</p>
-    <p>Zuritech is a registered digital service provider based in Switzerland.</p>
-    <p class="email">Contact: contact@zuritech.shop</p>
+    <p>Empowering Online Businesses</p>
+  </header>
+
+  <div class="container">
+    <h2>About Us</h2>
+    <p>Zuritech Solutions is a Swiss-based digital service provider offering secure and scalable online payment solutions tailored for modern businesses.</p>
+    <p>We specialize in Stripe integration, e-commerce platforms, and business automation to help you grow with confidence.</p>
+    <p><strong>Contact us:</strong> contact@zuritech.shop</p>
   </div>
+
+  <footer>
+    &copy; 2025 Zuritech Solutions. All rights reserved.
+  </footer>
+
 </body>
 </html>
