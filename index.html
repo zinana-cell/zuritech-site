@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zuritech Solutions</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f0f2f5;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f9;
       color: #333;
     }
     header {
@@ -16,41 +16,62 @@
       color: white;
       padding: 40px 20px;
       text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    header img {
+      height: 50px;
+      margin-bottom: 10px;
     }
     header h1 {
       margin: 0;
       font-size: 36px;
     }
+    header p {
+      margin: 10px 0 0;
+      font-size: 18px;
+    }
     .container {
       max-width: 800px;
-      margin: 50px auto;
-      background: #ffffff;
+      margin: 40px auto;
+      background: #fff;
       padding: 40px;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
     .container h2 {
       color: #1a73e8;
-      margin-bottom: 20px;
     }
     .container p {
-      font-size: 18px;
+      font-size: 17px;
       line-height: 1.6;
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    form button {
+      background: #1a73e8;
+      color: white;
+      cursor: pointer;
     }
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
       font-size: 14px;
-      color: #888;
+      color: #777;
     }
-    @media(max-width: 600px) {
+    footer a {
+      margin: 0 10px;
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    @media (max-width: 600px) {
       .container {
         margin: 20px;
         padding: 20px;
-      }
-      header h1 {
-        font-size: 28px;
       }
     }
   </style>
@@ -58,6 +79,7 @@
 <body>
 
   <header>
+    <img src="https://via.placeholder.com/150x50?text=Zuritech+Logo" alt="Zuritech Logo" />
     <h1>Zuritech Solutions</h1>
     <p>Empowering Online Businesses</p>
   </header>
@@ -65,12 +87,26 @@
   <div class="container">
     <h2>About Us</h2>
     <p>Zuritech Solutions is a Swiss-based digital service provider offering secure and scalable online payment solutions tailored for modern businesses.</p>
-    <p>We specialize in Stripe integration, e-commerce platforms, and business automation to help you grow with confidence.</p>
+    <p>We specialize in Stripe integration, e-commerce platforms, and business automation to help you grow with confidence. Our mission is to make online transactions safe, fast, and accessible for businesses of all sizes.</p>
     <p><strong>Contact us:</strong> contact@zuritech.shop</p>
+
+    <h2>Contact Form</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="4"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </div>
 
   <footer>
-    &copy; 2025 Zuritech Solutions. All rights reserved.
+    <p>
+      <a href="#">Home</a> |
+      <a href="#">About</a> |
+      <a href="#">Services</a> |
+      <a href="#">Contact</a>
+    </p>
+    <p>&copy; 2025 Zuritech Solutions. All rights reserved.</p>
   </footer>
 
 </body>
